@@ -1,12 +1,13 @@
-version: '3.8'
+version: "3"
 services:
   notebook:
     build: .
+    platform: linux/amd64
     environment:
       - JUPYTER_ENABLE_LAB=yes
       - DOCKER_STACKS_JUPYTER_CMD=notebook
     volumes:
-      - ./src:/home/jovyan/work
+      - ..:/home/jovyan/work
     user: root
     ports:
       - 8888:8888

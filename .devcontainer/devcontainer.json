@@ -1,11 +1,12 @@
 {
   "name": "jupyter-notebook-template",
   "dockerComposeFile": [
-    "./docker-compose.yml"
+    "docker-compose.yml"
   ],
   "service": "notebook",
   "extensions": [
-    "ms-python.python",
+    "ms-python.python"
   ],
-  "workspaceFolder": "/home/jovyan/work"
+  "workspaceFolder": "/home/jovyan/work",
+  "shutdownAction": "stopCompose"
 }
