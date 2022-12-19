@@ -4,11 +4,10 @@ services:
     build: .
     platform: linux/amd64
     environment:
+      - GRANT_SUDO=yes
       - JUPYTER_ENABLE_LAB=yes
-      - DOCKER_STACKS_JUPYTER_CMD=notebook
     volumes:
       - ..:/home/jovyan/work
     user: root
     ports:
       - 8888:8888
-    command: start-notebook.sh --NotebookApp.token=''

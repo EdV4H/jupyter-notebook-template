@@ -5,7 +5,9 @@
   ],
   "service": "notebook",
   "extensions": [
-    "ms-python.python"
+    "ms-python.python",
+    "seatonjiang.gitmoji-vscode",
+    "GitHub.copilot"
   ],
   "workspaceFolder": "/home/jovyan/work",
   "shutdownAction": "stopCompose"

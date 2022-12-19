@@ -1,4 +1,4 @@
 FROM jupyter/datascience-notebook:latest
 
 USER jovyan
-RUN conda install -y jupyter_contrib_nbextensions
+CMD ["start-notebook.sh", "--NotebookApp.token=''"]
